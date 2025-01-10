@@ -25,7 +25,6 @@ def get_data_for_date(tag, monat):
     result = df[(df['datum'].dt.day == tag) & (df['datum'].dt.month == monat)]
     return result
 
-
 # Streamlit Web-App
 def run_app():
     st.title("Dämmerungszeit Finder")
